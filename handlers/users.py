@@ -35,8 +35,9 @@ def init_handler(bot):
     @bot.is_canceled
     def proc_login(message):
         bot.log(message)
+        from .contacts import get_contact
         email = message.text.strip().lower()
-        if re.search(r'^\S+@\S+$', email):
+        if re.search(r'^\S+@\S+$', email) and get_contact(email):
             id = bot.db.User.add(message.from_user.id, email, **{
                 'user_name': message.from_user.username,
                 'first_name': message.from_user.first_name,
@@ -58,8 +59,9 @@ def init_handler(bot):
                 ), reply_markup=reply_markup)
             bot.reply_to(message, bot.lang.cmd_login_5)
             return
-        msg = bot.reply_to(message, bot.lang.cmd_login_9)
-        bot.register_next_step_handler(msg, proc_login)
+        else:
+            msg = bot.reply_to(message, bot.lang.cmd_login_9)
+            bot.register_next_step_handler(msg, proc_login)
 
     @bot.callback_query_handler(func=lambda call: call.data.startswith('login_'))
     def call_login(call):
