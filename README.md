@@ -1,15 +1,14 @@
 
-# cd /opt
+```# cd /opt
 # git clone https://github.com/rleschuk/ebot.git
 # cd ebot
 # python3 -m venv venv
 # source venv/bin/activate
 # pip install -r requirements.txt
-# touch .env
+# touch .env```
 
-
-.env:
---------------------------------------------------------------------
+*.env:*
+*--------------------------------------------------------------------*
 ADMINS=391158244,447734520,195819500,286658949
 TOKEN=YOUR_PRODUCTION_BOT_TOKEN
 DEV_TOKEN=YOUR_DEVELOPMENT_BOT_TOKEN
@@ -27,4 +26,4 @@ ORACLE_HOME=/usr/lib/oracle/12.1/client64
 TNS_ADMIN=$ORACLE_HOME/network/admin
 NSS_SSL_CBC_RANDOM_IV=0
 NLS_LANG='.UTF8'
---------------------------------------------------------------------
+*--------------------------------------------------------------------*
