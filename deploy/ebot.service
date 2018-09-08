@@ -1,0 +1,16 @@
+[Unit]
+Description = EBot
+Wants=network-online.target
+After=network.target network-online.target
+
+[Service]
+Type = forking
+EnvironmentFile = $HOME/development/ebot/ebot.env
+ExecStart = $HOME/development/ebot/ebot.sh start
+ExecStop = $HOME/development/ebot/ebot.sh stop
+ExecReload = $HOME/development/ebot/ebot.sh reload
+Restart=always
+RestartSec = 1
+
+[Install]
+WantedBy = multi-user.target
