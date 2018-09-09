@@ -1,4 +1,4 @@
-
+### Clone from repository
 ```
 # cd /opt
 # git clone https://github.com/rleschuk/ebot.git
@@ -7,6 +7,9 @@
 # source venv/bin/activate
 # pip install -r requirements.txt
 # touch .env
+# cp deploy/ebot.service /etc/systemd/system/
+# systemctl start ebot
+# systemctl enable ebot
 
 .env:
 --------------------------------------------------------------------
@@ -28,4 +31,11 @@ TNS_ADMIN=$ORACLE_HOME/network/admin
 NSS_SSL_CBC_RANDOM_IV=0
 NLS_LANG='.UTF8'
 --------------------------------------------------------------------
+```
+
+### Updating from repository
+```
+# cd /opt/ebot
+# git pull
+# systemctl restart ebot
 ```
