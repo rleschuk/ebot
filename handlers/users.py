@@ -50,13 +50,15 @@ def init_handler(bot):
                 types.InlineKeyboardButton(bot.lang.cmd_login_8, callback_data='login_0_%s' % id),
             )
             for admin in bot.config.admins:
-                bot.send_message(admin, bot.lang.cmd_login_6 % (
-                    message.from_user.first_name,
-                    message.from_user.last_name,
-                    message.from_user.username,
-                    message.from_user.id,
-                    email
-                ), reply_markup=reply_markup)
+                try:
+		    bot.send_message(admin, bot.lang.cmd_login_6 % (
+                        message.from_user.first_name,
+                        message.from_user.last_name,
+                        message.from_user.username,
+                        message.from_user.id,
+                        email
+                    ), reply_markup=reply_markup)
+                except: pass
             bot.reply_to(message, bot.lang.cmd_login_5)
             return
         else:
