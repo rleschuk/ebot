@@ -24,7 +24,7 @@ INSERT INTO "users" VALUES('uQsUMzTiQH','a.belan@enforta.com',442333736,NULL,'Al
 INSERT INTO "users" VALUES('EwUOQkhDLH','a.topolov@krd.enforta.com',455524336,NULL,'Алексей','Тополов','user',1);
 INSERT INTO "users" VALUES('oOJxCCoawI','s.bryukhov@enforta.com',364672794,NULL,'Сергей','Брюхов','user',1);
 INSERT INTO "users" VALUES('IADubNbZCr','s.rybkin@enforta.com',406068793,NULL,'Sergey','Rybkin','user',1);
-INSERT INTO "users" VALUES('gFoStUfWcY','m.chen@enforta.com',195819500,'Maksimilli0n','Chen','Maksim','user',1);
+INSERT INTO "users" VALUES('gFoStUfWcY','m.chen@enforta.com',195819500,'Maksimilli0n','Chen','Maksim','admin',1);
 INSERT INTO "users" VALUES('rmrNHkiOAe','k.rogozhin@srk.enforta.com',384160182,'rokon4eg','Константин','Рогожин','user',1);
 INSERT INTO "users" VALUES('LYIORMHWqr','i.bratykin@yrl.enforta.com',376554419,'Ilyabratykin','Ilya','Bratykin','user',0);
 INSERT INTO "users" VALUES('lmkVEQeUWF','e.molostov@enforta.com',468929261,NULL,'Eu','Mo','user',1);
@@ -80,5 +80,7 @@ INSERT INTO "users" VALUES('boAdpMWQtg','k.petrov@rzn.enforta.com',241488723,'ya
 INSERT INTO "users" VALUES('nEOjKKgFOf','mikhail.denisenko@enforta.com',553459631,'Mikhail_Denisenko','Михаил','Денисенко','user',1);
 INSERT INTO "users" VALUES('OQMjPwuIvR','v.maksushina@enforta.com',432504251,NULL,'Виктория','Максюшина','user',1);
 INSERT INTO "users" VALUES('vJiuQnEaDx','maksim.chirkin@domru.ru',555146881,'Maksim_GKU_Samara','Чиркин','Максим','user',1);
-INSERT INTO "users" VALUES('tXSCxHormp','kirill.golovanov@enforta.ru',330486361,NULL,'Kirill','Golovanov','user',1);
+INSERT INTO "users" VALUES('tXSCxHormp','kirill.golovanov@enforta.ru',330486361,NULL,'Kirill','Golovanov','user',0);
+INSERT INTO "users" VALUES('lNFqXPTTFp','maksim.pakhomov@enforta.com',276140643,NULL,'Макс',NULL,'user',1);
+INSERT INTO "users" VALUES('VaDkqSKFhS','artem.bokov@domru.ru',698583272,NULL,'Artem','Sergeevich','user',1);
 COMMIT;

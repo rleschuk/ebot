@@ -51,7 +51,7 @@ def init_handler(bot):
             )
             for admin in bot.config.admins:
                 try:
-		    bot.send_message(admin, bot.lang.cmd_login_6 % (
+                    bot.send_message(admin, bot.lang.cmd_login_6 % (
                         message.from_user.first_name,
                         message.from_user.last_name,
                         message.from_user.username,
