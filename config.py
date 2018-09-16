@@ -9,7 +9,7 @@ class Config:
     log_format = '%(asctime)s %(levelname)s %(message)s'
     bot_polling_none_stop = True
     bot_polling_interval = 1
-    bot_polling_timeout = 120
+    bot_polling_timeout = 60
     bot_threaded = True
     bot_skip_pending = True
     bot_num_threads = 4
